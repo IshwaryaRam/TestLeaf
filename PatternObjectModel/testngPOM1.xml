@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuitePOM1">
+  <test thread-count="7" name="TestPOM1">
+    <classes>
+     <class name="testcases.TC001_LoginAndLogout"/>
+      <class name="testcases.TC003_CreateLeads"/>
+      <class name="testcases.TC004_FindLeads"/>
+       <class name="testcases.TC006_DuplicateLeads"/>
+     <class name="testcases.TC005_EditLeads"/>
+      <class name="testcases.TC007_DeleteLeads"/>
+      <class name="testcases.TC008_MergeLeads"/>
+     
+    
+      
+    </classes>
+  </test> <!-- TestPOM1 -->
+</suite> <!-- SuitePOM1 -->
