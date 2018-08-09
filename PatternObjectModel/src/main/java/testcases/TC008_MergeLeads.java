@@ -9,6 +9,7 @@ import pages.HomePage;
 import pages.LoginPage;
 import pages.MyHomePage;
 import pages.MyLeadsPage;
+import pages.SwitchWindow;
 import pages.ViewLeadsPage;
 import wdMethods.ProjectMethods;
 
@@ -29,7 +30,7 @@ public class TC008_MergeLeads extends ProjectMethods{
 
 	@Test(dataProvider="fetchData")
 	public void MergeLeads(String uName,String pwd, String fromLead, String toLead) {
-		new LoginPage()
+		String fromLeadID = new LoginPage()
 		.enterUserName(uName)
 		.enterPassword(pwd)
 		.clickLogIn()
@@ -39,15 +40,18 @@ public class TC008_MergeLeads extends ProjectMethods{
 		.clickFromLeadIcon()
 		.enterSwitchLeadID(fromLead)
 		.clickFindLeadsBtn1()
-		.getTextFirstFromLead1()
+		.getTextFirstFromLead1();
+		String toLeadID = new SwitchWindow()
 		.clickFirstLeadResult1()
 		.clickToLeadIcon1()
 		.enterSwitchLeadID(toLead)
 		.clickFindLeadsBtn1()
-		.getTextFirstToLead1()
+		.getTextFirstToLead1();
+		new SwitchWindow()
 		.clickFirstLeadResult1()
 		.clickMergeBtn()
 		.acceptAlert();
+		
 		
 
 	}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteMyntra]">
+  <test name="TestMyntra(failed)">
+    <classes>
+      <class name="myntraTestCases.TC01_MyntraSearchProduct">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setData"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="beforeSuite"/>
+          <include name="searchInMyntra" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- myntraTestCases.TC01_MyntraSearchProduct -->
+    </classes>
+  </test> <!-- TestMyntra(failed) -->
+</suite> <!-- Failed suite [SuiteMyntra] -->

@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import cucumber.api.java.en.And;
+
 public class ShoppingBagPage extends ProjectMethodsForMyntra{
 
 	public ShoppingBagPage() {
@@ -14,6 +16,7 @@ public class ShoppingBagPage extends ProjectMethodsForMyntra{
 	//verify product name
 	@FindBy(how= How.XPATH, using ="//a[@class='c-gray']")
 	private WebElement eleVerifyProductName;
+	@And("Verify product name")
 	public ShoppingBagPage verifyProductName() {
 	//verifyExactText(eleVerifyProductName,productName);
 		verifyPartialText(eleVerifyProductName, "Carrera Unisex Polarised Oval Sunglasses");

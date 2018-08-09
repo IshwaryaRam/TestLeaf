@@ -15,7 +15,9 @@ public class Hooks extends ProjectMethods{
 	//	startTestModule("TC03_Delete lead","Delete leads using cucumber");	
 	//	startTestModule("TC04_Find lead","Find leads using cucumber");	
 	//	startTestModule("TC05_Duplicate lead","Duplicate leads using cucumber");	
-		startTestModule("TC06_Merge lead","Merge leads using cucumber");	
+		startTestModule("TC06_Merge lead","Merge leads using cucumber");
+		
+		
 		System.out.println(sc.getName());
 		test = startTestCase("Leads");
 		test.assignCategory("Smoke");

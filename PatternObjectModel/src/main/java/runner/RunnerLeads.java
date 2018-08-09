@@ -6,9 +6,9 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 //create leads
-@RunWith(Cucumber.class)
+/*@RunWith(Cucumber.class)
 @CucumberOptions(features="C:/Selenium_TestLeaf/PatternObjectModel/src/main/java/features/createLead.feature", 
-glue= {"runner","pages"})
+glue= {"runner","pages"})*/
 // tags= {"@Sanity", "@Regression"},monochrome=true)*/
 
 /*//edit leads

@@ -36,33 +36,33 @@ public class SwitchWindow extends ProjectMethods {
 	}
 
 	//switchWindow- first name
-		@FindBy(how=How.XPATH, using="//input[@name='firstName']")
-		private WebElement eleFirstName1;
+	@FindBy(how=How.XPATH, using="//input[@name='firstName']")
+	private WebElement eleFirstName1;
 
-		@And("Enter first name as (.*) in switchWindow page")
-		public SwitchWindow enterFirstName1(String fName1) {
-			type(eleFirstName1,fName1);
-			return this;
-		}
-		
-		//switchWindow- phone tab
-		@FindBy(how= How.XPATH, using= "//span[text()='Phone']")
-		private WebElement elePhoneTab1;
+	@And("Enter first name as (.*) in switchWindow page")
+	public SwitchWindow enterFirstName1(String fName1) {
+		type(eleFirstName1,fName1);
+		return this;
+	}
 
-		@And("Click on phone tab from SwitchWindow page")
-		public SwitchWindow clickPhone1() {
-			click(elePhoneTab1);
-			return this;
-		}
+	//switchWindow- phone tab
+	@FindBy(how= How.XPATH, using= "//span[text()='Phone']")
+	private WebElement elePhoneTab1;
 
-		@FindBy(how= How.XPATH, using = "//input[@name='phoneNumber']")
-		private WebElement elePhoneNumber1;
+	@And("Click on phone tab from SwitchWindow page")
+	public SwitchWindow clickPhone1() {
+		click(elePhoneTab1);
+		return this;
+	}
 
-		@And("Enter the phone value as (.*) from SwitchWindow page")
-		public SwitchWindow enterPhoneNumber1(String data) {
-			type(elePhoneNumber1,data);
-			return this;
-		}	
+	@FindBy(how= How.XPATH, using = "//input[@name='phoneNumber']")
+	private WebElement elePhoneNumber1;
+
+	@And("Enter the phone value as (.*) from SwitchWindow page")
+	public SwitchWindow enterPhoneNumber1(String data) {
+		type(elePhoneNumber1,data);
+		return this;
+	}	
 
 
 
@@ -93,9 +93,9 @@ public class SwitchWindow extends ProjectMethods {
 	private WebElement eleFirstFromLead;
 
 	@And("Get the 1st search result id for from lead from SwitchWindow page")
-	public SwitchWindow getTextFirstFromLead1(){
-		getText(eleFirstFromLead);
-		return this;
+	public String getTextFirstFromLead1(){
+
+		return getText(eleFirstFromLead);
 	}
 
 	//getText of 1st search result- to lead
@@ -103,11 +103,10 @@ public class SwitchWindow extends ProjectMethods {
 	private WebElement eleFirstToLead;
 
 	@And("Get the 1st search result id for to lead from SwitchWindow page")
-	public SwitchWindow getTextFirstToLead1(){
-		clickWithNoSnap(eleFirstToLead);
-		switchToWindow(0);
-		return this;
+	public String getTextFirstToLead1(){
+	
+		return getText(eleFirstToLead);
 	}
 
-	
+
 }

@@ -38,7 +38,7 @@ public class SeMethods extends Reporter implements WdMethods{
 	public static RemoteWebDriver driver;
 	public String sUrl,sHubUrl,sHubPort;
 	public Properties prop;
-	public static int firstResLeadId;
+	public static String firstResLeadId;
 	public SeMethods() {
 		prop = new Properties();
 		try {

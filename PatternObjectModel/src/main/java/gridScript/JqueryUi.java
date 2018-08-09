@@ -1,4 +1,4 @@
-package grid;
+package gridScript;
 
 import java.net.MalformedURLException;
 import java.net.URL;

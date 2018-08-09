@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuitePOM1]">
+  <test name="TestPOM1(failed)">
+    <classes>
+      <class name="testcases.TC001_LoginAndLogout">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="setData"/>
+        </methods>
+      </class> <!-- testcases.TC001_LoginAndLogout -->
+      <class name="testcases.TC006_DuplicateLeads">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="setData"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- testcases.TC006_DuplicateLeads -->
+      <class name="testcases.TC004_FindLeads">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="setData"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- testcases.TC004_FindLeads -->
+      <class name="testcases.TC003_CreateLeads">
+        <methods>
+          <include name="setData"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- testcases.TC003_CreateLeads -->
+      <class name="testcases.TC007_DeleteLeads">
+        <methods>
+          <include name="setData"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- testcases.TC007_DeleteLeads -->
+      <class name="testcases.TC008_MergeLeads">
+        <methods>
+          <include name="MergeLeads" invocation-numbers="0"/>
+          <include name="setData"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- testcases.TC008_MergeLeads -->
+      <class name="testcases.TC005_EditLeads">
+        <methods>
+          <include name="setData"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- testcases.TC005_EditLeads -->
+    </classes>
+  </test> <!-- TestPOM1(failed) -->
+</suite> <!-- Failed suite [SuitePOM1] -->
